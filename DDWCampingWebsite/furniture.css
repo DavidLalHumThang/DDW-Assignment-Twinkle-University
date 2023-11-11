@@ -1,0 +1,636 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+  }
+  
+  body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 1000px;
+    background-color: rgb(213, 236, 238);
+  }
+  
+  .navBar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #447;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    z-index: 100;
+  }
+  
+  
+  
+  .navBar li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+  
+  }
+  
+  .navBar li:nth-child(6){
+    
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navBar li a:hover{
+    background-color: #111;
+  }
+  
+  .navBar li:nth-child(6):hover{
+    background-color: #111;
+  }
+  
+  .ResponsiveMenu{
+  background-color: cyan;
+  width: 50%;
+  left:50%;
+  top:50%;
+  transform: translate(50%,50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  
+  
+  }
+  
+  .resLogoImg{
+  width: 70px;
+  }
+  
+  .hamburger{
+  width: 50px;
+  cursor: pointer;
+  }
+  
+  .cart{
+    font-size: 20px;
+  }
+  
+  .navBarResponsive li{
+    margin-bottom: 5px;
+   }
+  
+  .navBarResponsive li a{
+  text-decoration: none;
+  }
+
+  .MainFurn{
+    width: 100%;
+  }
+  
+  @media(min-width:992px){
+    .ResponsiveMenu{
+      display: none; 
+     }                                  
+  
+     .navBarResponsive{
+      display:none;
+     }
+  
+    
+  
+     .footerDiv{
+      margin-top:10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .emailInput{
+      width: 300px;
+      height: 50px;
+      padding-left:5px;
+    }
+  
+    .furn1{
+      width: 29.33%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .furn2{
+      width: 29.33%;
+      margin-right: 3%;
+    }
+  
+    .furn3{
+      width: 29.33%;
+      margin-right: 3%;
+    }
+  
+    .furn4{
+      width: 29.33%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .furn5{
+      width: 29.33%;
+      margin-right: 3%;
+    }
+  
+    .furn6{
+      width: 29.33%;
+      margin-right: 3%;
+    }
+  
+    .furn7{
+      width: 29.33%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .furn8{
+      width: 29.33%;
+      margin-right: 3%;
+    }
+  
+    .furn9{
+      width: 29.33%;
+      margin-right: 3%;
+    }
+
+    .heroFurnitureBg {
+      background-image: url('ImgsForFurniture/FurnitureBackground.webp');
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+    }
+
+     
+  
+   }
+  
+   
+   
+   @media(min-width:768px) and (max-width:991px){
+    .ResponsiveMenu{
+      display: none;
+     }
+  
+     .navBarResponsive{
+      display:none;
+     }
+  
+    .furn1{
+     width:45.5%;
+     margin-left: 3%;
+     margin-right: 3%;
+   
+    }
+  
+    .text{
+      width: 400px;
+    }
+   
+    .furn2{
+     width: 45.5%;
+     margin-right:3%;
+    }
+   
+    .furn3{
+     width: 45.5%;
+     margin-left:3%;
+     margin-right: 3%;
+     margin-top:3%;
+    }
+  
+    .furn4{
+      width: 45.5%;
+      margin-right:3%;
+      margin-top: 3%;
+      
+     }
+    
+     .furn5{
+      width: 45.5%;
+      margin-left:3%;
+      margin-right: 3%;
+      margin-top:3%;
+     }
+    
+     .furn6{
+      width: 45.5%;
+      margin-right:3%;
+      margin-top: 3%;
+     }
+
+     .furn7{
+      width: 45.5%;
+      margin-right:3%;
+      margin-top: 3%;
+      
+     }
+    
+     .furn8{
+      width: 45.5%;
+      margin-left:3%;
+      margin-right: 3%;
+      margin-top:3%;
+     }
+    
+     .furn9{
+      width: 45.5%;
+      margin-right:3%;
+      margin-top: 3%;
+     }
+  
+     
+  
+     
+  
+    
+  
+    
+  
+     .footerDiv{
+      margin-top:10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .emailInput{
+      width: 300px;
+      height: 50px;
+      padding-left:5px;
+    }
+
+    .heroFurnitureBg {
+      background-image: url('ImgsForFurniture/FurnitureBackground.webp');
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+    }
+
+    
+  
+   }
+   
+   @media(max-width:767px){
+  
+    .ManRelax{
+      display:none;
+    }
+  
+  .navBar{
+    display: none;
+  }
+  
+  
+  .navBarResponsive{
+  
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50% ;
+    position:absolute;
+    top:24%;
+    left:25%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 20px;
+    display: none;
+    z-index: 10;
+   }
+  
+  .companyTitle{
+    margin-top: 70%;
+  
+  }
+  
+    section{
+     width: 94%;
+     margin-bottom: 3%;
+     margin-bottom:3%;
+     margin-left:3%;
+     margin-right: 3%;
+    }
+  
+    .text{
+      width: 350px;
+    }
+    
+  
+    .roofTopTentBind{
+      display: flex;
+      flex-direction: column;
+     }
+  
+     .newItemLearnMore{
+      position:absolute;
+      
+      bottom:89%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+     }
+     
+  
+     .footerDiv{
+      margin-top:10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .footNavBarDiv h1{
+      margin-top: 20px;
+    }
+  
+    .emailInput{
+      width: 200px;
+      height: 50px;
+      padding-left:5px;
+    }
+  
+    .mediaTwinkleLogo{
+      display: none;
+    }
+  
+    .ContactMedia{
+      margin-top: 2%;
+    }
+
+    .furn{
+      width: 94%;
+      margin-bottom: 3%;
+      
+      margin-left:3%;
+      margin-right: 3%;
+    }
+
+    .hero img{
+      display: none;
+    }
+
+    .heroFurnitureBg {
+      
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+    }
+
+    .heroFrunitureTt p{
+      display: none;
+    }
+  
+   }
+  
+   .ContactMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: cyan;
+    align-items: center;
+    padding-left: 2%;
+    padding-right:2%;
+  }
+  
+  .ContactMedia img{
+    width: 100px;
+    
+  }
+  
+  .ContactMedia h1{
+    font-family: 'Pacifico', cursive, Arial;
+  }
+  
+  .emailLabel{
+    background-color: blue;
+    color:white;
+    padding:15px;
+  }
+  
+  
+  
+  .emailDiv h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+  }
+  
+  .emailDiv p{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .footerDiv ul{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:10px;
+  } 
+  
+  .footNavBarDiv{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .footNavBarDiv h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .footNavBarDiv ul li{
+    margin-bottom: 7px;
+  }
+  
+  .footNavBarDiv ul li a{
+    text-decoration: none;
+  }
+  
+  
+
+  .heroFrunitureTt {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: rgb(119, 172, 172);
+    padding: 50px;
+    opacity: 0.9;
+    
+  }
+
+  .heroFrunitureTt h1{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+  }
+
+  .heroFrunitureTt p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top:20px;
+    color: white;
+  }
+
+.MainFurn{
+  margin-top: 3%;
+}
+
+  .furn{
+    
+    border:1px solid black;
+    float:left;
+    box-sizing: border-box;
+    
+    border-radius: 3px;
+    margin-bottom: 3%;
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  
+
+  .furn a{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+    
+    background-color: blue;
+    border:none;
+    
+    border-radius: 10px;
+  }
+
+  .furn h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    color:navy;
+    text-align: center;
+    margin-top:6px;
+    
+  }
+
+  .furn p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    color:navy;
+    font-weight: bold;
+    text-align: center;
+    margin-top:6px;
+  }
+
+  
+
+  
+
+  .furn img{
+    width: 100%;
+    height: 300px;
+  }
+
+  
+   .hero {
+    width: 100%;
+    height: 50%;;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3%;
+   }
+
+
+   .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   }
+
+
+   .hero .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      background-color: rgb(119, 172, 172);
+      padding: 50px;
+      opacity: 0.9;
+      width: 500px;
+    
+   }
+
+
+   .hero .hero-text h1 {
+    color: #FFF;
+    font-size: 30px;
+    margin-bottom: 20px;
+   }
+
+
+   .hero .hero-text p {
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+   }
+   
+   .hero .hero-text a {
+    color: #333;
+    font-size: 20px;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+   }
+   
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+

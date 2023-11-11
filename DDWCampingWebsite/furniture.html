@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="furniture.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navBar">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="campEquip.html">Camping Equipment</a></li>
+        
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="offerNpackages.html">Offers and Packages</a></li>
+        
+        <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>        
+    </ul>
+
+    <div class="ResponsiveMenu">
+      <img class="resLogoImg" src="Icons/star-79.svg" alt="Twinkle RCC logo">
+      <img class="hamburger" id="toggleButton" src="Icons/hamburger-menu.svg" alt="hamburger-menu">
+    </div>
+
+    
+
+    <ul class="navBarResponsive" id="navBarRes">
+        
+      <li><a href="home.html">Home</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      
+      <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>      
+    </ul>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggleButton = document.getElementById("toggleButton");
+          const navBarResponsive = document.getElementById("navBarRes");
+
+      toggleButton.addEventListener("click", function() {
+        // Check the screen width
+        if (window.innerWidth <= 767) {
+          if (navBarResponsive.style.display === "none" || navBarResponsive.style.display === "") {
+            navBarResponsive.style.display = "block";
+          } else {
+            navBarResponsive.style.display = "none";
+          }
+        }
+      });
+    });
+
+  </script>
+
+<div class="heroFurnitureBg">
+    <div class="heroFrunitureTt">
+      <h1>Camping Furniture</h1>
+      <p>
+        Explore the best in camping furniture 
+        for your outdoor comfort. 
+        From portable chairs and 
+        tables to sleeping cots and hammocks, we've got it all!
+      </p>
+      
+    </div>
+</div>
+
+<div class="MainFurn">
+  <div class="furn1 furn">
+    
+    <img src="FurnitureImgs/CanvasButterfly.webp" alt="chair">
+    <h1>CANVAS BUTTERFLY CHAIR</h1>
+    <p>
+      This foldable outdoor butterfly 
+      chair is both a sturdy 
+      and stunning seat for any camp.
+    </p>
+    <p>£139</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn2 furn">
+    <img src="FurnitureImgs/PangeonCampignChair.webp" alt="chair">
+    <h1>PANGEAN CAMPAIGN CHAIR</h1>
+    <p>
+      Upgrade your outdoor comfort with this 
+      handsome folding camp chair.
+    </p>
+    <p>£145</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn3 furn">
+    <img src="FurnitureImgs/FoldingCampStool.webp" alt="stool">
+    <h1>
+      FOLDING CAMP STOOL
+    </h1>
+    <p>
+      This versatile camping stool looks great, 
+      is strong and is easy to clean and transport.
+    </p>
+    <p>£65.95</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  
+
+  <div class="furn4 furn">
+    <img src="FurnitureImgs/PangeonGliderChair.webp" alt="chair">
+    <h1>
+      PANGEAN GLIDER CHAIR
+    </h1>
+    <p>
+      Sturdy, Comfortable and Attractive Outdoor Chair. These chairs will make you relax in the outdoors. 
+    </p>
+    <p>£200</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn5 furn">
+    <img src="FurnitureImgs/MaineHeritageCampingCot.webp" alt="cot">
+    <h1>
+      MAINE HERITAGE CAMPING COT
+    </h1>
+    <p>
+      At 7 feet long, this cot will fit 
+      even the tallest outdoor enthusiasts.
+    </p>
+    <p>£200</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn6 furn">
+    <img src="FurnitureImgs/MilitaryCotByer.webp" alt="cot">
+    <h1>
+      MILITARY COT - BYER OF MAINE
+    </h1>
+    <p>
+      Modeled after durable Military cots, 
+      this camping cot is designed to last for years.
+    </p>
+    <p>£139.95</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn7 furn">
+    <img src="FurnitureImgs/EasyCotByer.webp" alt="cot">
+    <h1>
+      EASY COT - BYER OF MAINE
+    </h1>
+    <p>
+      This camping cot gets is named after its quick & easy set up.
+    </p>
+    <p>
+      £119.9
+    </p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn8 furn">
+    <img src="FurnitureImgs/ParadisoDoubleHammock.webp" alt="hammock">
+    <h1>
+      PARADISO DOUBLE HAMMOCK
+    </h1>
+    <p>
+      Over eight feet long and five and a half feet wide, 
+      the Paradiso has room for the whole family
+    </p>
+    <p>£150</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="furn9 furn">
+    <img src="FurnitureImgs/KidBunkCot.webp" alt="cot">
+    <h1>
+      KID BUNK COT - THE KID-O-BED
+    </h1>
+    <p>This portable kid camp bunk will 
+      add some joy and comfort to 
+      your family camping trip.</p>
+    <p>£338</p>
+    <a href="basket.html">
+      Shop Now
+    </a>
+  </div>
+
+  
+</div>
+
+
+ <div class="hero">
+    <img src="ImgsForFurniture/christmasPromo.webp" alt="promotion image">
+    <div class="hero-text">
+        <h1>Our Biggest Christmas Promotion</h1>
+        <p>
+          "Unlock the magic of the season with our exclusive Christmas deals and 
+          make this holiday truly unforgettable!"
+        </p>
+        <a href="#" title="call to action button">Check for Christmas Promotion</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ContactMedia">
+    <img class="mediaTwinkleLogo" src="Icons/star-79.svg" alt="Twinkle Logo">
+    <h1 class="MediaTwinkleTitle">Twinkle RCC</h1>
+    <div class="SocialMedia">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size: 36px;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size: 36px;"></i></a>
+      <a href="https://instagram.com/"><i class="fa fa-instagram" style="font-size: 36px;"></i></a>
+    </div>
+ </div>
+        
+<footer class="footerDiv">
+  <div class="emailDiv">
+    <h1>Your Adventure Awaits</h1>
+    <p>Sign up for emails and stay up-to-date on the latest news, events, and promotions.</p>
+    <label class="emailLabel" for="email">Sign Up</label>
+    <input class="emailInput" type="email" id="email" name="email" placeholder="Please Enter Your Email">
+  </div>
+
+  <div class="footNavBarDiv">
+    <h1>Navigation Bar</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      
+    </ul>
+  </div>
+  
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="campEquip.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navBar">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="campEquip.html">Camping Equipment</a></li>
+        
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="offerNpackages.html">Offers and Packages</a></li>
+        
+        <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>        
+    </ul>
+
+    <div class="ResponsiveMenu">
+      <img class="resLogoImg" src="Icons/star-79.svg" alt="Twinkle RCC logo">
+      <img class="hamburger" id="toggleButton" src="Icons/hamburger-menu.svg" alt="hamburger-menu">
+    </div>
+
+    
+
+  <ul class="navBarResponsive" id="navBarRes">
+        
+    <li><a href="home.html">Home</a></li>
+    <li><a href="furniture.html">Furniture</a></li>
+    <li><a href="campEquip.html">Camping Equipment</a></li>
+    
+    <li><a href="review.html">Reviews</a></li>
+    <li><a href="offerNpackages.html">Offers and Packages</a></li>
+    
+    <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>    
+  </ul>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggleButton = document.getElementById("toggleButton");
+          const navBarResponsive = document.getElementById("navBarRes");
+
+      toggleButton.addEventListener("click", function() {
+        // Check the screen width
+        if (window.innerWidth <= 767) {
+          if (navBarResponsive.style.display === "none" || navBarResponsive.style.display === "") {
+            navBarResponsive.style.display = "block";
+          } else {
+            navBarResponsive.style.display = "none";
+          }
+        }
+      });
+    });
+
+  </script>
+
+
+<div class="heroEquipmentBg">
+  <div class="heroEquipmentTt">
+    <h1>Camping Equipment</h1>
+    <p>
+      Elevate your camping experience with our premium equipment. 
+      Explore the outdoors with confidence and comfort. 
+      Shop now for durable tents, cozy sleeping bags, and more!
+    </p>
+    
+  </div>
+</div>
+
+<div class="botNav">
+  <div class="dropdown">
+    <button class="dropbtn">Camps</button>
+    <div class="dropdown-content">
+      <a href="#tentPart">Tents</a>
+      <a href="#CookPart">Cookwares</a>
+      <a href="#OutdoorGearPart">Outdoor Gear</a>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Men's</button>
+    <div class="dropdown-content">
+      <a href="#MenJacketPart">Jackets</a>
+      <a href="#MenFootware">Footware</a>
+      <a href="#MenPantPart">Pants</a>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Women's</button>
+    <div class="dropdown-content">
+      <a href="#WomenJacketPart">Jackets</a>
+      <a href="#WomenFootwarePart">Footware</a>
+      <a href="#WomenPantPart">Pants</a>
+    </div>
+  </div>
+</div>
+
+<div class="tents" id="tentLink">
+    <div id="tentPart">
+      <h1 class="partTitle">High Quality Tents</h1>
+      <div class="tent1 tent">
+        <img src="Tents/wenzelKlondike.webp" alt="tent">
+        <h1>8 Person Tent</h1>
+        <p>Wenzel</p>
+        <p>£100</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="tent2 tent">
+        <img src="Tents/12PersonTent.webp" alt="tent">
+        <h1>12 Person Tent</h1>
+        <p>Alvantor</p>
+        <p>£120</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="tent3 tent">
+        <img src="Tents/3PersonTent.webp" alt="tent">
+        <h1>3 Person Tent</h1>
+        <p>MoNiBloom</p>
+        <p>£47</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="tent4 tent">
+        <img src="Tents/4PersonTent.webp" alt="tent">
+        <h1>4 Person Tent</h1>
+        <p>MoNiBloom</p>
+        <p>£66</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="tent5 tent">
+        <img src="Tents/6PersonTent.webp" alt="tent">
+        <h1>6 Person Tent</h1>
+        <p>Alpha Camp</p>
+        <p>£100</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="tent6 tent">
+        <img src="Tents/PocketCarryingBag.webp" alt="tent">
+        <h1>Wakeman Outdoors Tent</h1>
+        <p>wakeman</p>
+        <p>£53</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle" id="cookingLink">High Quality Cookware</h1>
+  <div id="CookPart">
+    <div class="tent1 tent">
+      <img src="CookWare/campMaster.jpg" alt="stove">
+      <h1>CampMaster Deep Dish Grill Stove</h1>
+      <p>Double Burner Portable Butane Gas Cooker</p>
+      <p>£100</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="CookWare/lodge.avif" alt="lodge">
+      <h1>Lodge Reversible</h1>
+      <p>Griddle/Grill - 16.75 in</p>
+      <p>£42</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="CookWare/oxo.avif" alt="pan">
+      <h1>OXO Outdoor Carbon Steel Fry Pan</h1>
+      <p>Removable Handle</p>
+      <p>£47</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="CookWare/SnowPeak.webp" alt="kettle">
+      <h1>Snow Peak Kettle</h1>
+      <p>Liters</p>
+      <p>£26</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="CookWare/Soto.avif" alt="stove">
+      <h1>Soto Amicus Stove Cookset</h1>
+      <p>Combo</p>
+      <p>£100</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="CookWare/Stanely.avif" alt="even-heat">
+      <h1>Stanley Even-Heat Camp</h1>
+      <p>Pro Cookset</p>
+      <p>£153</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Outdoor Gear</h1>
+  <div id="OutdoorGearPart">
+    <div class="tent1 tent">
+      <img src="OutdoorGear/lowoko.jpg" alt="bag">
+      <h1>Waterproof Camping Essentials Bag</h1>
+      <p>Rain Cover</p>
+      <p>£51</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="OutdoorGear/GoalZeroYeti.avif" alt="yeti">
+      <h1>Goal Zero Yeti PRO 4000</h1>
+      <p>Power Station</p>
+      <p>£2,900</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="OutdoorGear/Midland.avif" alt="Midland">
+      <h1>Midland T10</h1>
+      <p>2-Way Radios - Pair</p>
+      <p>£25</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="OutdoorGear/spotGen4.avif" alt="spot">
+      <h1>SPOT</h1>
+      <p>Gen4</p>
+      <p>£120</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="OutdoorGear/stanleyQuencher.avif" alt="Quencher">
+      <h1>Stanley Quencher H2.0</h1>
+      <p>FlowState Tumbler</p>
+      <p>£60</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="OutdoorGear/waterBottle.webp" alt="bottle">
+      <h1>Black Premium Water bottle</h1>
+      <p>Water Cooler Bottles</p>
+      <p>£53</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Men's Jackets</h1>
+  <div id="MenJacketPart">
+    <div class="tent1 tent">
+      <img src="MenJacket/downSweater.jpg" alt="sweater">
+      <h1>Fanes Sarner/RDS Hybrid Jacket - Men's</h1>
+      <p>Salewa</p>
+      <p>£256</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="MenJacket/FanesSarner.jpg" alt="Jacket">
+      <h1>Down Sweater - Men's (Spring 2023)</h1>
+      <p>Patagonia</p>
+      <p>£125</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="MenJacket/FitzRoyDown.jpg" alt="Jacket">
+      <h1>CotopaxiFuego Jacket - Men's</h1>
+      <p>Cotopaxi</p>
+      <p>£170</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="MenJacket/FuegoDown.jpg" alt="Jacket">
+      <h1>Fuego Down Hooded Jacket - Men's</h1>
+      <p>Cotopaxi</p>
+      <p>£200</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="MenJacket/FuegoDown2.jpg" alt="hoody">
+      <h1>Fitz Roy Down Hoody - Men's</h1>
+      <p>Patagonia</p>
+      <p>£300</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="MenJacket/ThoriumHoody.jpg" alt="hoody">
+      <h1>Thorium Hoody - Men's</h1>
+      <p>Arc'teryx</p>
+      <p>£350</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Men's Footware</h1>
+  <div id="MenFootware">
+    <div class="tent1 tent">
+      <img src="MenFootware/Primzel.jpg" alt="Footware">
+      <h1>Primal Zen</h1>
+      <p>Lems</p>
+      <p>£118</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="MenFootware/boulderSubmit.jpg" alt="Footware">
+      <h1>Boulder Summit Waterproof</h1>
+      <p>Lems</p>
+      <p>£185</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="MenFootware/LoyakAC.jpg" alt="Footware">
+      <h1>Loyak AC - Men's</h1>
+      <p>Astral</p>
+      <p>£105</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="MenFootware/PisgahMen.jpg" alt="Footware">
+      <h1>Pisgah - Men's</h1>
+      <p>Astral</p>
+      <p>£175</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="MenFootware/TrailHead.jpg" alt="Footware">
+      <h1>Trailhead - Men's</h1>
+      <p>Lems</p>
+      <p>£103</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="MenFootware/ZCloudMen.jpg" alt="Footware">
+      <h1>Z/Cloud - Men's</h1>
+      <p>Chaco</p>
+      <p>£98</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Men's Pants</h1>
+  <div id="MenPantPart">
+    <div class="tent1 tent">
+      <img src="MenPants/BetaAR.jpg" alt="pant">
+      <h1>Beta AR Pant - Men's</h1>
+      <p>Arc'teryx</p>
+      <p>£425</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="MenPants/Falketind.jpg" alt="pant">
+      <h1>Falketind Gore-Tex Paclite Pants</h1>
+      <p>Norrona</p>
+      <p>£223</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="MenPants/Foray.jpg" alt="pant">
+      <h1>Foray Pants - Men's</h1>
+      <p>Outdoor Research</p>
+      <p>£142</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="MenPants/PrecipEco.jpg" alt="pant">
+      <h1>PreCip Eco Pant - Men's</h1>
+      <p>Marmot</p>
+      <p>£75</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent"> 
+      <img src="MenPants/saltoro.jpg" alt="pant">
+      <h1>Saltoro Pant - Men'ss</h1>
+      <p>Mountain Equipment</p>
+      <p>£193</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="MenPants/Torrentshell.jpg" alt="pant">
+      <h1>Torrentshell 3L Pants</h1>
+      <p>Patagonia</p>
+      <p>£120</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Women's Jackets</h1>
+  <div id="WomenJacketPart">
+    <div class="tent1 tent">
+      <img src="WomenJacket/CeriumHoody.jpg" alt="Jacket">
+      <h1>Cerium Hoody - 2023</h1>
+      <p>Arc'teryx</p>
+      <p>£270</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="WomenJacket/CeriumHoody2.jpg" alt="Jacket">
+      <h1>Cerium Hoody - 2022</h1>
+      <p>Arc'teryx</p>
+      <p>£223</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="WomenJacket/DownSweater.jpg" alt="Jacket">
+      <h1>Down Sweater - 2022</h1>
+      <p>Patagonia</p>
+      <p>£160</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="WomenJacket/DownSweater2.jpg" alt="Jacket">
+      <h1>Down Sweater - 2023</h1>
+      <p>Patagonia</p>
+      <p>£230</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="WomenJacket/DownSweaterHoody.jpg" alt="Jacket">
+      <h1>Down Sweater Hoody- Women's</h1>
+      <p>Patagonia</p>
+      <p>£223</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="WomenJacket/SilentDownParka.jpg" alt="Jacket">
+      <h1>Silent Down Parka- Women's</h1>
+      <p>Patagonia</p>
+      <p>£222</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Women's Footware</h1>
+  <div id="WomenFootwarePart">
+    <div class="tent1 tent">
+      <img src="WomenFootware/LadiesTundra.jpg" alt="Footware">
+      <h1>Ladies Tundra Boots</h1>
+      <p>Cloud Nine Sheepskin</p>
+      <p>£83</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="WomenFootware/LowdownSlide.jpg" alt="Footware">
+      <h1>Lowdown Slide- Women's</h1>
+      <p>AChaco</p>
+      <p>£58.8</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="WomenFootware/Mesa.jpg" alt="Footware">
+      <h1>Mesa- Women's</h1>
+      <p>Lems</p>
+      <p>£97</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="WomenFootware/Primal2.jpg" alt="Footware">
+      <h1>Primal 2</h1>
+      <p>Lems</p>
+      <p>£81.2</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="WomenFootware/TR1Loop.jpg" alt="Footware">
+      <h1>TR1 Loop- Women's</h1>
+      <p>Astral</p>
+      <p>£86.6</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="WomenFootware/WaterproofBoulder.jpg" alt="Footware">
+      <h1>Waterproof Boulder Boot</h1>
+      <p>Lems</p>
+      <p>£174</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="tents">
+  <h1 class="partTitle">High Quality Women's Pants</h1>
+  <div id="WomenPantPart">
+    <div class="tent1 tent">
+      <img src="WomenPant/BetaPant.jpg" alt="pant">
+      <h1>Beta Pant- Women's</h1>
+      <p>Arc'teryx</p>
+      <p>£270</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="WomenPant/FalketindGore.jpg" alt="pant">
+      <h1>Falketind Gore-Tex Paclite Pants</h1>
+      <p>Norrona</p>
+      <p>£223.8</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="WomenPant/PreCipEco.jpg" alt="pant">
+      <h1>PreCip Eco Pants-Short-Women's</h1>
+      <p>Marmot</p>
+      <p>£79</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="WomenPant/PreCipEco2.jpg" alt="pant">
+      <h1>PreCip Eco Pant- Women's</h1>
+      <p>Marmot</p>
+      <p>£76</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="WomenPant/PreCipEcoFullZip.jpg" alt="pant">
+      <h1>PreCip Eco Full Zip Pants</h1>
+      <p>Marmot</p>
+      <p>£99.5</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="WomenPant/SaltoroPant.jpg" alt="pant">
+      <h1>Saltoro Pant-Short Length-Women's</h1>
+      <p>Mountain Equipment</p>
+      <p>£194</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ContactMedia">
+    <img class="mediaTwinkleLogo" src="Icons/star-79.svg" alt="Twinkle Logo">
+    <h1 class="MediaTwinkleTitle">Twinkle RCC</h1>
+    <div class="SocialMedia">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size: 36px;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size: 36px;"></i></a>
+      <a href="https://instagram.com/"><i class="fa fa-instagram" style="font-size: 36px;"></i></a>
+    </div>
+ </div>
+        
+<footer class="footerDiv">
+  <div class="emailDiv">
+    <h1>Your Adventure Awaits</h1>
+    <p>Sign up for emails and stay up-to-date on the latest news, events, and promotions.</p>
+    <label class="emailLabel" for="email">Sign Up</label>
+    <input class="emailInput" type="email" id="email" name="email" placeholder="Please Enter Your Email">
+  </div>
+
+  <div class="footNavBarDiv">
+    <h1>Navigation Bar</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      
+    </ul>
+  </div>
+  
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,471 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 1000px;
+    background-color: rgb(213, 236, 238);
+}
+
+.navBar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #447;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    z-index: 100;
+}
+
+
+
+.navBar li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.navBar li:nth-child(6){
+    
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navBar li a:hover{
+    background-color: #111;
+}
+
+.navBar li:nth-child(6):hover{
+    background-color: #111;
+}
+
+.ResponsiveMenu{
+  background-color: cyan;
+  width: 50%;
+  left:50%;
+  top:50%;
+  transform: translate(50%,50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  
+  
+}
+
+.resLogoImg{
+  width: 70px;
+}
+
+.hamburger{
+  width: 50px;
+  cursor: pointer;
+}
+
+.cart{
+    font-size: 20px;
+}
+
+.navBarResponsive li{
+    margin-bottom: 5px;
+   }
+  
+   .navBarResponsive li a{
+    text-decoration: none;
+   }
+   
+   @media(min-width:992px){
+    .ResponsiveMenu{
+      display: none;
+     }
+  
+     .navBarResponsive{
+      display:none;
+     }
+  
+   
+ 
+     .footerDiv{
+      margin-top:10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .emailInput{
+      width: 300px;
+      height: 50px;
+      padding-left:5px;
+    }
+  
+     
+  
+   }
+  
+   
+   
+   @media(min-width:768px) and (max-width:991px){
+    .ResponsiveMenu{
+      display: none;
+     }
+  
+     .navBarResponsive{
+      display:none;
+     }
+  
+  
+     .footerDiv{
+      margin-top:10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .emailInput{
+      width: 300px;
+      height: 50px;
+      padding-left:5px;
+    }
+  
+   }
+   
+   @media(max-width:767px){
+  
+    .ManRelax{
+      display:none;
+    }
+  
+  .navBar{
+    display: none;
+  }
+  
+  
+  .navBarResponsive{
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50% ;
+    position:absolute;
+    top:24%;
+    left:68%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 20px;
+    display: none;
+   }
+  
+   
+  
+  
+  
+     .footerDiv{
+      margin-top:10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .footNavBarDiv h1{
+      margin-top: 20px;
+    }
+  
+    .emailInput{
+      width: 200px;
+      height: 50px;
+      padding-left:5px;
+    }
+  
+    .mediaTwinkleLogo{
+      display: none;
+    }
+  
+    .ContactMedia{
+      margin-top: 2%;
+    }
+
+    .WriteReview{
+      font-size: 20px;
+    }
+  
+   }
+  
+   .checked {
+    color: orange;
+  }
+
+  .re{
+    margin-top:10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .starNReviewMark{
+    margin-top:2%;
+  }
+
+  .WriteReview{
+    margin-top:6%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .scoreNstar{
+    margin-top:1%;
+  }
+
+  .title{
+    margin-top:2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review{
+    margin-top:2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title input{
+    height: 50px;
+    border:2px solid cyan;
+  }
+
+  .review input{
+    height: 50px;
+    border:2px solid cyan;
+  }
+
+  .reviewSurvey{
+    margin-top:3%;
+    
+  }
+
+  .recommendFriend{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+
+  .recommendFriend label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+  }
+
+  .yesNo{
+    margin-top: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+  }
+
+  
+
+  .purchasePlace{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+
+  .purchasePlace{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+  }
+
+  .onOut{
+    margin-top: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+  }
+  
+
+  .validator{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textWrite{
+    margin-bottom: 2%;
+    height: 50px;
+    padding-left: 5px;
+  }
+
+  .emailWrite{
+    margin-bottom: 2%;
+    height: 50px;
+    padding-left: 5px;
+  }
+
+  .submitBtn{
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    color:white;
+    border:none;
+    margin-bottom: 2%;
+  }
+
+  .reviewCount{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+
+  .writingReviewPart{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+    
+  .reviewCmt{
+    display: flex;
+    flex-direction: row;
+    color:gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 3%;
+    margin-top:15px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .pp{
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    
+  }
+
+  .nameNstar .namePart{
+    color:blue;
+    margin-bottom: 4px;
+    
+  }
+
+  .nameNstar{
+    margin-bottom: 1%;
+  }
+
+  .surveyAns{
+    margin-bottom: 1%;
+    font-family: Arial;
+    
+  }
+
+  .surveyAns p{
+    margin-bottom: 5px;
+  }
+
+  .buyerReview h1{
+    font-size: 20px;
+    margin-bottom: 1%;
+  }
+
+  .buyerReview p{
+    font-size: 16px;
+  }
+
+  .likeDislike{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+  }
+
+  .up{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  .down{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .ContactMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: cyan;
+    align-items: center;
+    padding-left: 2%;
+    padding-right:2%;
+  }
+  
+  .ContactMedia img{
+    width: 100px;
+    
+  }
+  
+  .ContactMedia h1{
+    font-family: 'Pacifico', cursive, Arial;
+  }
+  
+  .emailLabel{
+    background-color: blue;
+    color:white;
+    padding:15px;
+  }
+  
+  
+  
+  .emailDiv h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+  }
+  
+  .emailDiv p{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .footerDiv ul{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:10px;
+  } 
+  
+  .footNavBarDiv{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .footNavBarDiv h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .footNavBarDiv ul li{
+    margin-bottom: 7px;
+  }
+  
+  .footNavBarDiv ul li a{
+    text-decoration: none;
+  }

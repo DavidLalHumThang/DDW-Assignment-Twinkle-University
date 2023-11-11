@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="offerNpackages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navBar">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="campEquip.html">Camping Equipment</a></li>
+        
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="offerNpackages.html">Offers and Packages</a></li>
+        
+        <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>        
+    </ul>
+
+    <div class="ResponsiveMenu">
+      <img class="resLogoImg" src="Icons/star-79.svg" alt="Twinkle RCC logo">
+      <img class="hamburger" id="toggleButton" src="Icons/hamburger-menu.svg" alt="Hamburger Menu">
+    </div>
+
+    
+
+  <ul class="navBarResponsive" id="navBarRes">
+        
+    <li><a href="home.html">Home</a></li>
+    <li><a href="furniture.html">Furniture</a></li>
+    <li><a href="campEquip.html">Camping Equipment</a></li>
+    
+    <li><a href="review.html">Reviews</a></li>
+    <li><a href="offerNpackages.html">Offers and Packages</a></li>
+    
+    <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>    
+  </ul>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggleButton = document.getElementById("toggleButton");
+          const navBarResponsive = document.getElementById("navBarRes");
+
+      toggleButton.addEventListener("click", function() {
+        // Check the screen width
+        if (window.innerWidth <= 767) {
+          if (navBarResponsive.style.display === "none" || navBarResponsive.style.display === "") {
+            navBarResponsive.style.display = "block";
+          } else {
+            navBarResponsive.style.display = "none";
+          }
+        }
+      });
+    });
+
+  </script>
+
+<div class="heroEquipmentBg">
+  <div class="heroEquipmentTt">
+    <h1>Offers and Packages</h1>
+    <p>
+      Unlock amazing savings on top camping gear today! 
+      Explore our special offers and packages for unbeatable deals. 
+      Get ready for your next adventure with discounts on tents, 
+      sleeping bags, and more. Don't miss out – shop now!
+    </p>
+    
+  </div>
+</div>
+
+
+<div class="tents">
+  <h1 class="partTitle">Our Top Items</h1>
+  
+    <div class="tent1 tent">
+      <img src="OutdoorGear/lowoko.jpg" alt="Bag">
+      <h1>Waterproof Camping Essentials Bag</h1>
+      <p>Rain Cover</p>
+      <p>£51</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent2 tent">
+      <img src="Tents/12PersonTent.webp" alt="Tent">
+      <h1>12 Person Tent</h1>
+      <p>Alvantor</p>
+      <p>£120</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent3 tent">
+      <img src="CookWare/campMaster.jpg" alt="Cooker">
+      <h1>CampMaster Deep Dish Grill Stove</h1>
+      <p>Double Burner Portable Butane Gas Cooker</p>
+      <p>£100</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent4 tent">
+      <img src="OutdoorGear/stanleyQuencher.avif" alt="Quencher">
+      <h1>Stanley Quencher H2.0</h1>
+      <p>FlowState Tumbler</p>
+      <p>£60</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent5 tent">
+      <img src="MenJacket/downSweater.jpg" alt="Sweater">
+      <h1>Down Sweater - Men's (Spring 2023)</h1>
+      <p>Patagonia</p>
+      <p>£125</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="tent6 tent">
+      <img src="FurnitureImgs/PangeonCampignChair.webp" alt="Chair">
+      <h1>PANGEAN CAMPAIGN CHAIR</h1>
+      <p>Upgrade your outdoor comfort with this handsome folding camp chair.</p>
+      <p>£145</p>
+      <button>Shop Now</button>
+    </div>
+  
+</div>
+
+<div class="roofToopDiv" id="roofLink">
+  <h1>New Tents Have Arrived This Week</h1>
+  <div class="YouTubeVidNDesc">
+    <p class="roofTopIntroducing">
+      Introducing our latest arrival – the ultimate rooftop tent 
+      for your outdoor escapades! Elevate your camping experience 
+      with the convenience and comfort of our brand-new rooftop tents. 
+      Designed for adventurers who crave both style and functionality, 
+      these tents are the perfect way to take your camping trips to new heights. 
+      Don't wait to experience the thrill of sleeping under the stars with 
+      the ease of setup that rooftop tents offer. Explore our collection now and transform your 
+      camping adventures into unforgettable rooftop getaways.
+    </p>
+    <iframe class="roofTopTentYouTube" width="560" height="315" src="https://www.youtube.com/embed/bFkvW6lS058?si=o4pc22rGJRfYO0x6" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+  </div>
+</div>
+
+<div class="promotionDiv">
+  <h1>Christmas Promotion</h1>
+  <div class="promoMainDiv">
+    
+    <object data="Promotion/christmasPic.jpg" width="300" height="200" class="ChristmasPromoImg"></object>
+
+
+    <div class="descPromo">
+      <h1>Check Out Our Excellent Christmas Promotion</h1>
+      <p>Whoever Come to Our Onsite Shop Between December 21 and 26 Will get 70% Discount.</p>
+      <p style="text-align: center;">Happy Christmas</p>
+    </div>
+  </div>
+  
+</div>
+
+<hr>
+
+<div class="location">
+  
+  <div class="MapNDesc">
+    <div class="LocationDesc">
+      <h1>Check Out Our Location</h1>
+      <p>Welcome to Twinkle RCC Company</p>
+    </div>
+  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17593.47888746683!2d96.46481972340702!3d22.027653491994453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cc9e9a39dc530d%3A0xf5fc2ebf4ba5ae4e!2sMyoma%20Market!5e0!3m2!1sen!2smm!4v1699378217649!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="Gmap"></iframe>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ContactMedia">
+    <img class="mediaTwinkleLogo" src="Icons/star-79.svg" alt="Twinkle Logo">
+    <h1 class="MediaTwinkleTitle">Twinkle RCC</h1>
+    <div class="SocialMedia">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size: 36px;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size: 36px;"></i></a>
+      <a href="https://instagram.com/"><i class="fa fa-instagram" style="font-size: 36px;"></i></a>
+    </div>
+ </div>
+        
+<footer class="footerDiv">
+  <div class="emailDiv">
+    <h1>Your Adventure Awaits</h1>
+    <p>Sign up for emails and stay up-to-date on the latest news, events, and promotions.</p>
+    <label class="emailLabel" for="email">Sign Up</label>
+    <input class="emailInput" type="email" id="email" name="email" placeholder="Please Enter Your Email">
+  </div>
+
+  <div class="footNavBarDiv">
+    <h1>Navigation Bar</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      
+    </ul>
+  </div>
+  
+</footer>
+
+</body>
+</html>

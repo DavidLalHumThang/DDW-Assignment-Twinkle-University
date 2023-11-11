@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navBar">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="campEquip.html">Camping Equipment</a></li>
+        
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="offerNpackages.html">Offers and Packages</a></li>
+        
+        <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>
+        
+        
+    </ul>
+
+    <div class="ResponsiveMenu">
+      <img class="resLogoImg" src="Icons/star-79.svg" alt="Twinkle RCC logo">
+      <img class="hamburger" id="toggleButton" src="Icons/hamburger-menu.svg" alt="Hamburger Menu">
+    </div>
+
+    
+
+    
+
+  <ul class="navBarResponsive" id="navBarRes">
+        
+    <li><a href="home.html">Home</a></li>
+    <li><a href="furniture.html">Furniture</a></li>
+    <li><a href="campEquip.html">Camping Equipment</a></li>
+    
+    <li><a href="review.html">Reviews</a></li>
+    <li><a href="offerNpackages.html">Offers and Packages</a></li>
+    
+    <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>
+    
+  </ul>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggleButton = document.getElementById("toggleButton");
+          const navBarResponsive = document.getElementById("navBarRes");
+
+      toggleButton.addEventListener("click", function() {
+        // Check the screen width
+        if (window.innerWidth <= 767) {
+          if (navBarResponsive.style.display === "none" || navBarResponsive.style.display === "") {
+            navBarResponsive.style.display = "block";
+          } else {
+            navBarResponsive.style.display = "none";
+          }
+        }
+      });
+    });
+
+  </script>
+
+
+  <div class="writingReviewPart">
+    <h1 class="re">REVIEWS</h1>
+  <div class="starNReviewMark">
+    <h1>4.9</h1>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+
+  <h1 class="WriteReview">Write A Review</h1>
+
+  <div class="scoreNstar">
+    <p>Score:</p>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+  </div>
+
+  <div class="title">
+    <label>Title:</label>
+    <input type="text" name="text">
+  </div>
+
+  <div class="review">
+    <label>Review:</label>
+    <input type="text" name="text">
+  </div>
+
+  
+<div class="reviewSurvey">
+    <div class="recommendFriend">
+      <label>Would You Recommend it to a friend?</label>
+      <div class="yesNo">
+        <input type="checkbox">Yes
+        <input type="checkbox">No
+      </div>
+    </div>
+
+    <div class="purchasePlace">
+      <label>Where did you purchase this product?</label>
+      <div class="onOut">
+        <input type="checkbox">Online
+        <input type="checkbox">In Store
+      </div>
+    </div>
+</div>
+
+  <div class="validator">
+    <input class="textWrite" type="text" placeholder="First Name">
+    <input class="textWrite" type="text" placeholder="Last Name">
+    <input class="emailWrite" type="email" placeholder="Email" required>
+    <input class="submitBtn" type="submit" value="Post">
+  </div>
+  </div>
+
+  <hr>
+  <h1 class="reviewCount">5 Reviews</h1>
+
+  <div class="reviewCmt">
+    <img class="pp" src="ReviewProfile/MaleProfilePic.png" alt="Blank Profile Picture">
+    <div class="cmtSection">
+      <div class="nameNstar">
+        <p class="namePart">San San</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </div>
+      <div class="surveyAns">
+        <p><i>Would you recommend Camping World to a friend?:Yes</i></p>
+        <p><i>Purchase Location:Online</i></p>
+        <p><i>Would you recommend this product to a friend?:Yes</i></p>
+      </div>
+
+      <div class="buyerReview">
+        <h1>
+          SMOOTHEST ROCKING MOTION EVER!!!!!
+        </h1>
+        <p>After reading review on rocking camp chairs- I ordered 2. 
+          BEST CAMP CHAIR I have had. The comfort of the rocking is so smooth! 
+          They are wider with a higher back. 
+          Anyone who has sat in my chairs love them. 
+          The only thing I would add is a cup holder.</p>
+      </div>
+      <div class="likeDislike">
+        <div class="up">
+          <i class="fa fa-thumbs-up"></i>
+          <p>6</p>
+        </div>
+        <div class="down">
+          <i class="fa fa-thumbs-down"></i>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="reviewCmt">
+    
+    <embed class="pp" type="image/jpg" src="ReviewProfile/MaleProfilePic.png">
+
+    <div class="cmtSection">
+      <div class="nameNstar">
+        <p class="namePart">David</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </div>
+      <div class="surveyAns">
+        <p><i>Would you recommend Camping World to a friend?:Yes</i></p>
+        <p><i>Purchase Location:Online</i></p>
+        <p><i>Would you recommend this product to a friend?:Yes</i></p>
+      </div>
+
+      <div class="buyerReview">
+        <h1>
+          Great chair, my 56lb. Dog
+        </h1>
+        <p>
+          Great chair, my 56lb. Dog loves it too! Just wish camping world didn’t 
+          bombard me with so many e-mails. 
+          Occasional ones of new products or special sales, ok, but constantly………
+        </p>
+      </div>
+      <div class="likeDislike">
+        <div class="up">
+          <i class="fa fa-thumbs-up"></i>
+          <p>6</p>
+        </div>
+        <div class="down">
+          <i class="fa fa-thumbs-down"></i>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="reviewCmt">
+    <img class="pp" src="ReviewProfile/MaleProfilePic.png" alt="Blank Profile Picture">
+    <div class="cmtSection">
+      <div class="nameNstar">
+        <p class="namePart">Aye Chan</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </div>
+      <div class="surveyAns">
+        <p><i>Would you recommend Camping World to a friend?:Yes</i></p>
+        <p><i>Purchase Location:Online</i></p>
+        <p><i>Would you recommend this product to a friend?:Yes</i></p>
+      </div>
+
+      <div class="buyerReview">
+        <h1>
+          Comfy warm camp chair
+
+        </h1>
+        <p>
+          This is a very comfortable chair with the best feature being 
+          keeping the cold wind out. Very warm! This is the second time 
+          I have purchased this exact item. Now I have a matching set!
+.
+        </p>
+      </div>
+      <div class="likeDislike">
+        <div class="up">
+          <i class="fa fa-thumbs-up"></i>
+          <p>6</p>
+        </div>
+        <div class="down">
+          <i class="fa fa-thumbs-down"></i>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="reviewCmt">
+    <img class="pp" src="ReviewProfile/MaleProfilePic.png" alt="Blank Profile Picture">
+    <div class="cmtSection">
+      <div class="nameNstar">
+        <p class="namePart">Samuel</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </div>
+      <div class="surveyAns">
+        <p><i>Would you recommend Camping World to a friend?:Yes</i></p>
+        <p><i>Purchase Location:Online</i></p>
+        <p><i>Would you recommend this product to a friend?:Yes</i></p>
+      </div>
+
+      <div class="buyerReview">
+        <h1>
+          I finally got one!
+
+        </h1>
+        <p>
+          Very well made and comfy. 
+          I bought this for my wife and at first she was like 
+          its okay but after everyone loved it she made it her 
+          first choice around the fire. I will be getting more. 
+          One word of warning they do take up as much storage as 
+          about 4 regular full size chairs.
+
+        </p>
+      </div>
+      <div class="likeDislike">
+        <div class="up">
+          <i class="fa fa-thumbs-up"></i>
+          <p>6</p>
+        </div>
+        <div class="down">
+          <i class="fa fa-thumbs-down"></i>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="reviewCmt">
+    <img class="pp" src="ReviewProfile/MaleProfilePic.png" alt="Blank Profile Picture">
+    <div class="cmtSection">
+      <div class="nameNstar">
+        <p class="namePart">Mee Mee</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </div>
+      <div class="surveyAns">
+        <p><i>Would you recommend Camping World to a friend?:Yes</i></p>
+        <p><i>Purchase Location:Online</i></p>
+        <p><i>Would you recommend this product to a friend?:Yes</i></p>
+      </div>
+
+      <div class="buyerReview">
+        <h1>
+          So comfortable and warm! I
+        </h1>
+        <p>
+          So comfortable and warm! I can never go back to my old chairs.
+
+        </p>
+      </div>
+      <div class="likeDislike">
+        <div class="up">
+          <i class="fa fa-thumbs-up"></i>
+          <p>6</p>
+        </div>
+        <div class="down">
+          <i class="fa fa-thumbs-down"></i>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ContactMedia">
+    <img class="mediaTwinkleLogo" src="Icons/star-79.svg" alt="Twinkle Logo">
+    <h1 class="MediaTwinkleTitle">Twinkle RCC</h1>
+    <div class="SocialMedia">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size: 36px;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size: 36px;"></i></a>
+      <a href="https://instagram.com/"><i class="fa fa-instagram" style="font-size: 36px;"></i></a>
+    </div>
+ </div>
+        
+<footer class="footerDiv">
+  <div class="emailDiv">
+    <h1>Your Adventure Awaits</h1>
+    <p>Sign up for emails and stay up-to-date on the latest news, events, and promotions.</p>
+    <label class="emailLabel" for="email">Sign Up</label>
+    <input class="emailInput" type="email" id="email" name="email" placeholder="Please Enter Your Email">
+  </div>
+
+  <div class="footNavBarDiv">
+    <h1>Navigation Bar</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      
+    </ul>
+  </div>
+  
+</footer>
+
+</body>
+</html>

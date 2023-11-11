@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navBar">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="campEquip.html">Camping Equipment</a></li>
+        
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="offerNpackages.html">Offers and Packages</a></li>
+        
+        <li class="cart"><i class="fa fa-shopping-cart"></i></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <div class="ResponsiveMenu">
+      <img class="resLogoImg" src="Icons/star-79.svg" alt="Twinkle RCC logo">
+      <img class="hamburger" id="toggleButton" src="Icons/hamburger-menu.svg" alt="hamburger-menu">
+    </div>
+
+    <ul class="navBar">
+        
+      <li><a href="home.html">Home</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      
+      <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>      
+  </ul>
+
+  <ul class="navBarResponsive" id="navBarRes">
+        
+    <li><a href="home.html">Home</a></li>
+    <li><a href="campEquip.html">Camping Equipment</a></li>
+    <li><a href="furniture.html">Furniture</a></li>
+    <li><a href="review.html">Reviews</a></li>
+    <li><a href="offerNpackages.html">Offers and Packages</a></li>
+    
+    <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>    
+  </ul>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggleButton = document.getElementById("toggleButton");
+          const navBarResponsive = document.getElementById("navBarRes");
+
+      toggleButton.addEventListener("click", function() {
+        // Check the screen width
+        if (window.innerWidth <= 767) {
+          if (navBarResponsive.style.display === "none" || navBarResponsive.style.display === "") {
+            navBarResponsive.style.display = "block";
+          } else {
+            navBarResponsive.style.display = "none";
+          }
+        }
+      });
+    });
+
+  </script>
+
+<div class="heroEquipmentBg">
+  <div class="heroEquipmentTt">
+    <h1>Shop at Twinkle</h1>
+    <p>
+      Elevate your camping experience with our premium equipment. 
+      Explore the outdoors with confidence and comfort. 
+      Shop now for durable tents, cozy sleeping bags, and more!
+    </p>
+    
+  </div>
+</div>
+
+
+  <div class="CartMainAllDiv">
+    <div class="MainDivCart MainDivCart1">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/CanvasButterfly.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>CANVAS BUTTERFLY CHAIR</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              This foldable outdoor butterfly chair is both a sturdy and stunning seat for any camp.
+    
+              Crafted from renewable hardwood Keruing wood, this canvas butterfly camping 
+              chair has been dipped in oil for an extra protective finish and covered with an 
+              attractive heavy-weight polyester canvas.
+              
+              Simply fold up this portable butterfly chair in seconds and bring 
+              it with on your next adventure or use it permanently in your canvas tent.
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£139</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart2">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/PangeonCampignChair.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>PANGEAN CAMPAIGN CHAIR</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              Upgrade your outdoor comfort with this handsome folding camp chair.
+
+              Crafted from renewable hardwood Keruing wood, this campaign 
+              camping chair has been dipped in oil for an extra protective finish and 
+              covered with an attractive heavy-weight polyester canvas.
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£149</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart3">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/FoldingCampStool.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>FOLDING CAMP STOOL</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              This versatile camping stool looks great, is strong and 
+              is easy to clean and transport. Another favorite piece 
+              that we use in our Life inTents glamping events.
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£65</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart4">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/PangeonGliderChair.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>PANGEAN GLIDER CHAIR</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              These chairs will make you relax in the outdoors.  
+              These glider chairs are beautifully made with 
+              Eucalyptus Grandis wood and dipped in a 
+              protective oil to protect them from outdoor elements. 
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£119</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart5">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/KidBunkCot.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>KID BUNK COT - THE KID-O-BED</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              This portable kid camp bunk will add some joy and comfort to 
+              your family camping trip. Quick to set-up and transform 
+              from bunk beds to 
+              a bench to two twin cots - the choice is yours.
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£139</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart6">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/MilitaryCotByer.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>MILITARY COT - BYER OF MAINE</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              Anyone can enjoy a nap or good night of sleep on this beast 
+              of a cot. The durable frame is made of aircraft aluminum 
+              tubing reinforced with 
+              interior steel and the ripstop canvas is easy to keep clean. 
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£209</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart7">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/EasyCotByer.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>EASY COT - BYER OF MAINE</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              This camping cot gets is named after its quick & easy set up. 
+              Just remove it from the bag, 
+              unfold the cot, and kick back. 
+              All done in less then 10 seconds
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£139</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart8">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/ParadisoDoubleHammock.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>PARADISO DOUBLE HAMMOCK</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              Over eight feet long and five and a half feet wide, 
+              the Paradiso has room for the whole family. 
+              Handwoven in Brazil this hammock stretches and 
+              conforms for exquisite comfort.
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£139</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="MainDivCart MainDivCart9">
+      <div class="imgNDesc">
+        <img src="FurnitureImgs/MaineHeritageCampingCot.webp" alt="furniture">
+        <div class="ProductDesc">
+          <h1>MAINE HERITAGE CAMPING COT</h1>
+          
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <p class="details">
+              The Maine Heritage Cot is a combination of traditional wooden 
+              folding cot aesthetics paired with modern construction techniques and design. 
+              Its sturdy North American hardwood frame is covered by 600 Denier polyester fabric, 
+              making this camping cot strong enough to hold up to 375 lbs.
+            </p>
+          </div>
+  
+          <hr>
+  
+          <p class="price">£139</p>
+          <div class="ReviewDiv">
+            <a href="review.html" style="text-decoration: none;">
+              <h2 class="Review review1">Reviews</h2>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star" ></span>
+              <span class="fa fa-star"></span>
+            </a>
+            
+          </div>
+  
+          <button class="addToCart">Add To Cart</button>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ContactMedia">
+    <img class="mediaTwinkleLogo" src="Icons/star-79.svg" alt="Twinkle Logo">
+    <h1 class="MediaTwinkleTitle">Twinkle RCC</h1>
+    <div class="SocialMedia">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size: 36px;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size: 36px;"></i></a>
+      <a href="https://instagram.com/"><i class="fa fa-instagram" style="font-size: 36px;"></i></a>
+    </div>
+ </div>
+        
+<footer class="footerDiv">
+  <div class="emailDiv">
+    <h1>Your Adventure Awaits</h1>
+    <p>Sign up for emails and stay up-to-date on the latest news, events, and promotions.</p>
+    <label class="emailLabel" for="email">Sign Up</label>
+    <input class="emailInput" type="email" id="email" name="email" placeholder="Please Enter Your Email">
+  </div>
+
+  <div class="footNavBarDiv">
+    <h1>Navigation Bar</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      
+    </ul>
+  </div>
+  
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navBar">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="campEquip.html">Camping Equipment</a></li>
+        
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="offerNpackages.html">Offers and Packages</a></li>
+        
+        <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>        
+    </ul>
+
+    <div class="ResponsiveMenu">
+      <img class="resLogoImg" src="Icons/star-79.svg" alt="Twinkle RCC logo">
+      <img class="hamburger" id="toggleButton" src="Icons/hamburger-menu.svg" alt="Hamburger Menu">
+    </div>
+
+   
+
+  <ul class="navBarResponsive" id="navBarRes">
+        
+    <li><a href="home.html">Home</a></li>
+    <li><a href="furniture.html">Furniture</a></li>
+    <li><a href="campEquip.html">Camping Equipment</a></li>
+    
+    <li><a href="review.html">Reviews</a></li>
+    <li><a href="offerNpackages.html">Offers and Packages</a></li>
+    
+    <li class="cart" style="padding: 0;"><a href="basket.html"><i class="fa fa-shopping-cart"></i></a></li>    
+  </ul>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggleButton = document.getElementById("toggleButton");
+          const navBarResponsive = document.getElementById("navBarRes");
+
+      toggleButton.addEventListener("click", function() {
+        // Check the screen width
+        if (window.innerWidth <= 767) {
+          if (navBarResponsive.style.display === "none" || navBarResponsive.style.display === "") {
+            navBarResponsive.style.display = "block";
+          } else {
+            navBarResponsive.style.display = "none";
+          }
+        }
+      });
+    });
+
+  </script>
+
+    <h1 class="companyTitle">Twinkle Retail Camping Comapany</h1>
+
+    <div class="intro">
+        <img class="ManRelax" src="man.svg" alt="Man relaxing during camping">
+        <p class="introCompany">
+            Welcome to Twinkle Retail Camping Company, RCC. Your premier destination 
+            for top-quality camping gear. Explore our curated selection of 
+            camping equipment, from rugged tents to cookware, and 
+            embark on your next outdoor adventure fully prepared. We're here to 
+            make your camping experience unforgettable. 
+            Shop now and gear up for the great outdoors!
+        </p>
+    </div>
+    <h1 class="popularCate">Popular Categories</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <a href="campEquip.html#tentLink">
+            <div class="numbertext">1 / 3</div>
+            <img src="TentMain.avif" style="width:100%" alt="Tent">
+            <div class="text">Explore High Quality Tent</div>
+          </a>
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <a href="furniture.html">
+            <div class="numbertext">2 / 3</div>
+            <img src="MainFurniture.jpg" style="width:100%" alt="Furniture">
+            <div class="text">Explore High Quality Furniture</div>
+          </a>
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <a href="campEquip.html#cookingLink">
+            <div class="numbertext">3 / 3</div>
+            <img src="cookerMain.jpg" style="width:100%" alt="Furniture">
+            <div class="text">Explore High Quality Cookware</div>
+          </a>
+          
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+      <script>
+         let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<h1 class="headPopItem">Popular Items</h1>
+ <form>
+  <section class="section1 PopItemDiv">
+    
+      <h2>Camp Master</h2>
+      <a href="campEquip.html">
+        <img class="PopItem" src="PopularItems/campMaster.jpg" alt="Tent Image">
+      </a>
+      
+      <div class="PopItemDescription">
+        <p>CampMaster Deep Dish Grill Stove</p>
+        <p>Double Burner Portable Gas Cooker</p>
+        <p class="PopItemPrice">£100</p>
+      </div>
+
+  </section>
+
+  <section class="section2 PopItemDiv">
+      <h2>Lowoko</h2>
+      <a href="campEquip.html">
+        <img class="PopItem" src="PopularItems/lowoko.jpg" alt="Backpack Image">
+      </a>
+      
+      <div class="PopItemDescription">
+        <p>Waterproof Camping Essentials Bag</p>
+        <p>Rain Cover</p>
+        <p class="PopItemPrice">£51</p>
+      </div>
+  </section>
+
+  <section class="section3 PopItemDiv">
+      <h2>Patagonia</h2>
+      <a href="campEquip.html">
+        <img class="PopItem" src="PopularItems/patagonia.jpg" alt="Camp Trouser Image">
+      </a>
+        
+        <div class="PopItemDescription">
+          <p>Built to thrive in snowy conditions</p>
+          <p>Triolet Pants feature 3-layer</p>
+          <p class="PopItemPrice">£319</p>
+        </div>
+  </section>
+
+  <section class="section4 PopItemDiv">
+    <h2>Solomon</h2>
+    <a href="campEquip.html">
+      <img class="PopItem" src="PopularItems/salomon.jpg" alt="Tent Image">
+    </a>
+      
+      <div class="PopItemDescription">
+        <p>A fully charged hiking shoe</p>
+        <p>Multi-faceted </p>
+        <p class="PopItemPrice">£100</p>
+      </div>
+  </section>
+  
+  <section class="section5 PopItemDiv">
+      <h2>Saquib</h2>
+      <a href="campEquip.html">
+        <img class="PopItem" src="PopularItems/waterBottle.webp" alt="Backpack Image">
+      </a>
+      
+      <div class="PopItemDescription">
+        <p>Black Premium Water bottle</p>
+        <p>Water Cooler Bottles</p>
+        <p class="PopItemPrice">£56</p>
+      </div>
+  </section>
+  
+  <section class="section6 PopItemDiv">
+    <h2>Patagonia</h2>
+    <a href="campEquip.html">
+      <img class="PopItem" src="PopularItems/wenzelKlondike.webp" alt="Camp Trouser Image">
+    </a>
+    
+    <div class="PopItemDescription">
+      <p>8-Person Tent</p>
+      <p>Wenzel</p>
+      <p class="PopItemPrice">£100</p>
+    </div>
+  </section>
+
+ </form>
+
+
+ <h1 class="headingNewItem">
+  New Items
+</h1>
+
+ <div class="newItems">
+    <div class="roofTopIntroDiv1 roofTopTentBind">
+      <p class="roofTopTentIntro1 introP">
+        We are thrilled to unveil the latest innovation in the world of outdoor 
+        adventure - the Rooftop Tent! Designed to revolutionize the way you experience 
+        the great outdoors, this cutting-edge camping solution is set to take your 
+        adventures to new heights. Crafted with meticulous attention to detail and 
+        born out of a deep passion for exploration, 
+        our rooftop tent is the answer to all your camping dreams.
+      </p>
+      <img src="NewItemsImgs/RoofTopTent.jpg" alt="Rooftop Tent">
+    </div>
+
+    <div class="roofTopIntroDiv1 roofTopTentBind">
+      <img class="rooftopImg" src="NewItemsImgs/RoofTopTent2.jpg" alt="roofTopTent">
+      <button class="newItemLearnMore"><a href="offerNpackages.html#roofLink" style="text-decoration: none; color: white;">Learn More</a></button>
+      <p class="roofTopTentIntro2 introP">
+        Imagine a camping experience that is as comfortable as it is convenient, 
+        allowing you to set up camp anywhere your vehicle can take you. With the 
+        rooftop tent, your adventure knows no bounds. Whether you're a seasoned outdoors 
+        enthusiast or just dipping your toes into the world of camping, this portable haven is 
+        perfect for all. From starry nights in the wilderness to waking up to breathtaking sunrise 
+        vistas, this rooftop tent offers you the freedom to immerse yourself in the beauty of nature, 
+        all while enjoying the comfort and safety of your own elevated sanctuary. Embrace a new era 
+        of outdoor exploration with our rooftop tent, 
+        where every journey is an unforgettable adventure waiting to happen.
+      </p>
+      
+    </div>
+    
+ </div>
+
+ <div class="ContactMedia">
+    <img class="mediaTwinkleLogo" src="Icons/star-79.svg" alt="Twinkle Logo">
+    <h1 class="MediaTwinkleTitle">Twinkle RCC</h1>
+    <div class="SocialMedia">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size: 36px;"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size: 36px;"></i></a>
+      <a href="https://instagram.com/"><i class="fa fa-instagram" style="font-size: 36px;"></i></a>
+    </div>
+ </div>
+        
+<footer class="footerDiv">
+  <div class="emailDiv">
+    <h1>Your Adventure Awaits</h1>
+    <p>Sign up for emails and stay up-to-date on the latest news, events, and promotions.</p>
+    <label class="emailLabel" for="email">Sign Up</label>
+    <input class="emailInput" type="email" id="email" name="email" placeholder="Please Enter Your Email">
+  </div>
+
+  <div class="footNavBarDiv">
+    <h1>Navigation Bar</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="campEquip.html">Camping Equipment</a></li>
+      <li><a href="furniture.html">Furniture</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="offerNpackages.html">Offers and Packages</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      
+    </ul>
+  </div>
+  
+</footer>
+
+</body>
+</html>
